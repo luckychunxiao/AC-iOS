@@ -1,0 +1,50 @@
+rm -rf DerivedData
+
+xcrun xcodebuild build-for-testing \
+  -configuration Debug \
+  -workspace AppCenterDemo-iOS.xcworkspace \
+  -sdk iphoneos \
+  -scheme AppCenterDemo-iOS \
+  -derivedDataPath DerivedData
+
+#11
+
+appcenter test run xcuitest --app "KevinApps/AppCenterDemo-iOS" --devices d14f94f1 --test-series "launchtest" --locale "en_US" --build-dir DerivedData/Build/Products/Debug-iphoneos
+
+appcenter test run xcuitest --app "KevinApps/AppCenterDemo-iOS" --devices "KevinApps/ios-11-and-x87-devices" --test-series "launchtest" --locale "en_US" --build-dir DerivedData/Build/Products/Debug-iphoneos
+
+
+# 10
+
+appcenter test run xcuitest --app "KevinApps/AppCenterDemo-iOS" --devices "KevinApps/ios-10-and-76sse-devices" --test-series "trackeventtest" --locale "en_US" --build-dir DerivedData/Build/Products/Debug-iphoneos
+
+appcenter test run xcuitest --app "KevinApps/AppCenterDemo-iOS" --devices "KevinApps/ios-10-and-7se" --test-series "trackeventtest" --locale "en_US" --build-dir DerivedData/Build/Products/Debug-iphoneos
+
+=============================================================================
+# Error Message:
+=============================================================================
+
+HockeyAppSupporter:AppCenterDemo-iOS HockeyAppWX$ appcenter test run xcuitest --app "KevinApps/AppCenterDemo-iOS" --devices "KevinApps/ios-10-and-7se" --test-series "trackeventtest" --locale "en_US" --build-dir DerivedData/Build/Products/Debug-iphoneos
+Preparing tests... done.
+Validating arguments... done.
+Creating new test run... done.
+Validating application file... done.
+Uploading files... done.
+Starting test run... failed.
+Error: Error "Unexpected token N in JSON at position 0" occurred in deserializing the responseBody - "No valid devices in selection (KevinApps/ios-10-and-7se: 2 devices)" for the default response.
+
+Further error details: For help, please send both the reported error above and the following environment information to us by going to https://appcenter.ms/apps and starting a new conversation (using the icon in the bottom right corner of the screen)
+
+        Environment: darwin
+
+        App Upload Id: KevinApps/AppCenterDemo-iOS
+
+        Timestamp: 1512278265924
+
+        Operation: RunXCUITestCommand
+
+        User Email: v-lchunx@microsoft.com
+
+        User Name: v-lchunx
+
+        User Id: 9af6793c-8b1c-4107-be65-99b1cdad2d43

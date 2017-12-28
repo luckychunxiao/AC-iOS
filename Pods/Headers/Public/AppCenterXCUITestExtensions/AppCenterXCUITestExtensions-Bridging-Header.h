@@ -1,0 +1,1 @@
+../../../AppCenterXCUITestExtensions/Sources/AppCenterXCUITestExtensions-Bridging-Header.h

@@ -1,0 +1,1 @@
+../../../AppCenterXCUITestExtensions/Sources/ACTLaunch.h

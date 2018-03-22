@@ -32,7 +32,8 @@
     [MSCrashes setDelegate:self];
     
     //HELLO
-    
+    //Hi
+    [NSLog(@"Hi")];
 
     
     return YES;

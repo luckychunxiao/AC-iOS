@@ -1,4 +1,4 @@
-[![Build status](https://build.appcenter.ms/v0.1/apps/c8e3ca06-8d84-4853-ab7d-2e14cadce2f9/branches/master/badge)](https://appcenter.ms)
+Hello
 
 # Introduction
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 

@@ -32,9 +32,7 @@
     [MSCrashes setDelegate:self];
     
 
-    //Test
-    //Hello
-    //Hi
+    
     
     return YES;
 }
